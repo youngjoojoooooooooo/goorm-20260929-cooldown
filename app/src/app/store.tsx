@@ -3,11 +3,11 @@ import { Image } from 'expo-image';
 import { router } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { BACKGROUNDS, PACKS, SOUNDS } from '../src/data/catalog';
-import { buyPack, devFakePurchases, restorePurchases, type PurchaseResult } from '../src/purchases';
-import { useApp } from '../src/state/AppState';
-import { BigButton, Screen } from '../src/ui/components';
-import { colors, radius } from '../src/ui/theme';
+import { BACKGROUNDS, PACKS, SOUNDS } from '../data/catalog';
+import { buyPack, devFakePurchases, restorePurchases, type PurchaseResult } from '../purchases';
+import { useApp } from '../state/AppState';
+import { BigButton, Screen } from '../ui/components';
+import { colors, radius } from '../ui/theme';
 
 const pack = PACKS.pack_quiet_night;
 

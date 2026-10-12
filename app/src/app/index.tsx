@@ -1,12 +1,12 @@
 // 홈: 오늘의 마음 고르기(F1), 지난번처럼, 나의 쉼표 바로가기
 import { router } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { backgroundById, DEFAULT_SESSION, MOODS, soundById, suggestVerses } from '../src/data/catalog';
-import type { Mood } from '../src/data/types';
-import { useApp } from '../src/state/AppState';
-import { useStartRest } from '../src/state/useStartRest';
-import { BigButton, Screen, SectionHeader, ThumbCard } from '../src/ui/components';
-import { colors, radius } from '../src/ui/theme';
+import { backgroundById, DEFAULT_SESSION, MOODS, soundById, suggestVerses } from '../data/catalog';
+import type { Mood } from '../data/types';
+import { useApp } from '../state/AppState';
+import { useStartRest } from '../state/useStartRest';
+import { BigButton, Screen, SectionHeader, ThumbCard } from '../ui/components';
+import { colors, radius } from '../ui/theme';
 
 function greeting() {
   const h = new Date().getHours();
@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <Screen>
       <View style={styles.topRow}>
-        <Text style={styles.brand}>쉼표 기도</Text>
+        <Text style={styles.brand}>포즈스케이프</Text>
         <Pressable onPress={() => router.push('/settings')} hitSlop={12}>
           <Text style={styles.gear}>⚙︎</Text>
         </Pressable>

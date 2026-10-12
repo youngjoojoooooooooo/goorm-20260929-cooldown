@@ -172,7 +172,7 @@ class Mixer {
     this.leadSub = null;
     if (!first) return;
     try {
-      first.setActiveForLockScreen(true, { title: '쉼표 기도', artist: '편안한 밤을 위한 소리' });
+      first.setActiveForLockScreen(true, { title: '포즈스케이프', artist: '편안한 밤을 위한 소리' });
     } catch {}
     this.leadSub = first.addListener('playbackStatusUpdate', (s: AudioStatus) => this.onLeadStatus(s));
   }

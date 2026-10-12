@@ -2,13 +2,13 @@
 import { router } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { backgroundById, KIND_LABEL, soundById, timerLabel, verseById } from '../src/data/catalog';
-import type { Favorite } from '../src/data/types';
-import { useApp } from '../src/state/AppState';
-import { useStartRest } from '../src/state/useStartRest';
-import { Screen, SectionHeader, ThumbCard, Title } from '../src/ui/components';
-import { Sheet } from '../src/ui/Sheet';
-import { colors, radius } from '../src/ui/theme';
+import { backgroundById, KIND_LABEL, soundById, timerLabel, verseById } from '../data/catalog';
+import type { Favorite } from '../data/types';
+import { useApp } from '../state/AppState';
+import { useStartRest } from '../state/useStartRest';
+import { Screen, SectionHeader, ThumbCard, Title } from '../ui/components';
+import { Sheet } from '../ui/Sheet';
+import { colors, radius } from '../ui/theme';
 
 export default function Favorites() {
   const { favorites, savedVerses, removeFavorite, toggleSavedVerse, limits, hasPack } = useApp();

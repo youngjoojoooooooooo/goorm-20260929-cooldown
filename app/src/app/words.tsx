@@ -2,12 +2,12 @@
 import { router } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { isUnlocked, KIND_LABEL, MOODS, suggestVerses, verseById, VERSES } from '../src/data/catalog';
-import type { Verse, VerseKind } from '../src/data/types';
-import { useApp } from '../src/state/AppState';
-import { BigButton, Chip, Screen, Title } from '../src/ui/components';
-import { Sheet } from '../src/ui/Sheet';
-import { colors, radius } from '../src/ui/theme';
+import { isUnlocked, KIND_LABEL, MOODS, suggestVerses, verseById, VERSES } from '../data/catalog';
+import type { Verse, VerseKind } from '../data/types';
+import { useApp } from '../state/AppState';
+import { BigButton, Chip, Screen, Title } from '../ui/components';
+import { Sheet } from '../ui/Sheet';
+import { colors, radius } from '../ui/theme';
 
 const KINDS: VerseKind[] = ['scripture', 'comfort', 'gratitude'];
 

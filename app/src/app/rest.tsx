@@ -7,12 +7,12 @@ import { useVideoPlayer, VideoView } from 'expo-video';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Animated, Easing, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { mixer, useMixerPlaying } from '../src/audio/mixer';
-import { backgroundById, CARD_SECONDS, FADE_SECONDS, KIND_LABEL, verseById } from '../src/data/catalog';
-import type { Background, Verse } from '../src/data/types';
-import { useApp } from '../src/state/AppState';
-import { Sheet } from '../src/ui/Sheet';
-import { colors } from '../src/ui/theme';
+import { mixer, useMixerPlaying } from '../audio/mixer';
+import { backgroundById, CARD_SECONDS, FADE_SECONDS, KIND_LABEL, verseById } from '../data/catalog';
+import type { Background, Verse } from '../data/types';
+import { useApp } from '../state/AppState';
+import { Sheet } from '../ui/Sheet';
+import { colors } from '../ui/theme';
 
 function VideoBackground({ bg }: { bg: Background }) {
   const player = useVideoPlayer(bg.file, (p) => {

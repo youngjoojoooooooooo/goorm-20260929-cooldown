@@ -2,9 +2,9 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { mixer } from '../src/audio/mixer';
-import { AppStateProvider } from '../src/state/AppState';
-import { colors } from '../src/ui/theme';
+import { mixer } from '../audio/mixer';
+import { AppStateProvider } from '../state/AppState';
+import { colors } from '../ui/theme';
 
 export default function RootLayout() {
   useEffect(() => {

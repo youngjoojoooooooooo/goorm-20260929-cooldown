@@ -4,13 +4,13 @@ import Slider from '@react-native-community/slider';
 import { router, useFocusEffect } from 'expo-router';
 import { useCallback, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { mixer, useMixerPlaying } from '../src/audio/mixer';
-import { BACKGROUNDS, isUnlocked, PREVIEW_SECONDS, SOUNDS, TIMER_OPTIONS, timerLabel } from '../src/data/catalog';
-import type { MixItem, Sound } from '../src/data/types';
-import { useApp } from '../src/state/AppState';
-import { BigButton, Chip, Screen, SectionHeader, ThumbCard } from '../src/ui/components';
-import { Sheet } from '../src/ui/Sheet';
-import { colors, radius } from '../src/ui/theme';
+import { mixer, useMixerPlaying } from '../audio/mixer';
+import { BACKGROUNDS, isUnlocked, PREVIEW_SECONDS, SOUNDS, TIMER_OPTIONS, timerLabel } from '../data/catalog';
+import type { MixItem, Sound } from '../data/types';
+import { useApp } from '../state/AppState';
+import { BigButton, Chip, Screen, SectionHeader, ThumbCard } from '../ui/components';
+import { Sheet } from '../ui/Sheet';
+import { colors, radius } from '../ui/theme';
 
 type Notice = null | { kind: 'limit' } | { kind: 'locked'; name: string } | { kind: 'lockedBg' };
 

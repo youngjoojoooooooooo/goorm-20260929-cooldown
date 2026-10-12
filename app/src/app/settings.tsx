@@ -1,11 +1,11 @@
 // 설정 + 만든 사람·출처
 import { router } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import credits from '../assets/credits.json';
-import { TIMER_OPTIONS, timerLabel } from '../src/data/catalog';
-import { useApp } from '../src/state/AppState';
-import { Chip, Screen, SectionHeader, Title } from '../src/ui/components';
-import { colors, radius } from '../src/ui/theme';
+import credits from '../../assets/credits.json';
+import { TIMER_OPTIONS, timerLabel } from '../data/catalog';
+import { useApp } from '../state/AppState';
+import { Chip, Screen, SectionHeader, Title } from '../ui/components';
+import { colors, radius } from '../ui/theme';
 
 const BRIGHTNESS = [
   { v: 0.5, label: '어둡게' },
@@ -58,7 +58,7 @@ export default function Settings() {
           </View>
         ))}
       </View>
-      <Text style={styles.footnote}>쉼표 기도는 편안한 밤을 위한 앱이에요. 개인정보를 수집하지 않으며, 모든 기록은 이 기기 안에만 저장돼요.</Text>
+      <Text style={styles.footnote}>포즈스케이프는 편안한 밤을 위한 앱이에요. 개인정보를 수집하지 않으며, 모든 기록은 이 기기 안에만 저장돼요.</Text>
     </Screen>
   );
 }
